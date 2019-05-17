@@ -14,5 +14,5 @@
 
 ## How to view
 
-  Copy the full path of the `index.html` file as a url in your browser. This will direct you to the correct page.
-  The path should look similar to this: `/Users/username/projects/news-summary/index.html`.
+  1. Type `node node_modules/http-server/bin/http-server` into the command line to open the server.
+  2. Visit the url `http://localhost:8080/`.
