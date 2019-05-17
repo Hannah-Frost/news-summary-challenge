@@ -2,7 +2,7 @@
   function testArticleReturnsID() {
     article = new Article("TEXT", "URL", "IMAGE")
 
-    if (article.returnID() !== "ID") {
+    if (article.returnID() !== 0) {
       throw new Error("Article does not return the correct ID.")
     }
   }
@@ -21,7 +21,7 @@ testArticleReturnsText()
 })(this);
 
 (function(exports) {
-  function testArticleReturnsText() {
+  function testArticleReturnsURL() {
     article = new Article("TEXT", "URL", "IMAGE")
 
     if (article.returnURL() !== "URL") {

@@ -7,16 +7,20 @@
   }
 
   Article.prototype.returnID = function() {
-    this.id
+    return this.id
   }
 
   Article.prototype.returnText = function() {
-    this.text
+    return this.text
   }
+
   Article.prototype.returnURL = function() {
-    this.url
+    return this.url
   }
+  
   Article.prototype.returnImage = function() {
-    this.image
+    return this.image
   }
-});
+
+  exports.Article = Article;
+})(this);
