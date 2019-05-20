@@ -5,9 +5,9 @@ request.open('GET', 'https://content.guardianapis.com/search?q=debate&tag=politi
 request.onload = function() {
   var data = JSON.parse(this.response)
 
+  var list = new ArticleList()
   data.response.results.forEach(article => {
-    console.log(article.webTitle)
-    console.log(article.webUrl)
+    list.addArticle(article.webTitle, article.webUrl, "no image found")
   })
 }
 
